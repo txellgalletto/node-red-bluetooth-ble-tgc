@@ -1,0 +1,71 @@
+{
+  "name": "node-red-contrib-generic-ble",
+  "version": "4.0.3",
+  "description": "Node-RED nodes for generic BLE devices",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CANDY-LINE/node-red-contrib-generic-ble.git"
+  },
+  "author": "Daisuke Baba <baba.daisuke@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/CANDY-LINE/node-red-contrib-generic-ble/issues"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "DEBUG=node-red-contrib-generic-ble:* gulp test",
+    "clean": "gulp clean",
+    "prepublish": "gulp build"
+  },
+  "homepage": "https://github.com/CANDY-LINE/node-red-contrib-generic-ble#readme",
+  "keywords": [
+    "node-red",
+    "bluetooth",
+    "BLE",
+    "bluetooth low energy",
+    "bluetooth smart",
+    "CANDY RED",
+    "CANDY EGG"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "del": "^2.2.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-header": "^1.8.8",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-jest": "^4.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-prettier": "^3.0.0",
+    "gulp-resources": "^0.5.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-yaml": "^1.0.1",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "natives": "^1.1.6",
+    "prettier": "^2.1.2",
+    "sinon": "^2.1.0",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-10",
+    "dbus-next": "^0.8.2",
+    "debug": "^4.2.0",
+    "source-map-support": "^0.5.19"
+  },
+  "node-red": {
+    "nodes": {
+      "generic-ble": "dist/generic-ble.js"
+    }
+  }
+}
