@@ -17,9 +17,9 @@ limitations under the License.
 import noble from './noble';
 import debugLogger from 'debug';
 
-const debug = debugLogger('node-red-contrib-generic-ble:index');
+const debug = debugLogger('node-red-bluetooth-ble-tgc:index');
 const debugIn = debugLogger(
-  'node-red-contrib-generic-ble:index:generic-ble-in'
+  'node-red-bluetooth-ble-tgc:index:generic-ble-in'
 );
 const debugOut = debugLogger(
   'node-red-contrib-generic-ble:index:generic-ble-out'
@@ -139,7 +139,7 @@ function onErrorFunc(RED) {
     RED.log.error(message);
     if (!noble.initialized) {
       RED.log.error(
-        `The error seems to be a BlueZ Permission Error. See 'Installation Note' in README at https://flows.nodered.org/node/node-red-contrib-generic-ble for addressing the issue.`
+        `The error seems to be a BlueZ Permission Error. See 'Installation Note' in README at https://flows.nodered.org/node/node-red-bluetooth-ble-tgc for addressing the issue.`
       );
     }
     Object.values(configBleDevices).forEach((node) => node.emit('error'));
