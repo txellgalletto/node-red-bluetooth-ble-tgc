@@ -1,6 +1,5 @@
-node-red-contrib-generic-ble
+node-red-bluetooth-ble-tgc
 ===
-
 [![GitHub release](https://img.shields.io/github/release/CANDY-LINE/node-red-contrib-generic-ble.svg)](https://github.com/CANDY-LINE/node-red-contrib-generic-ble/releases/latest)
 [![master Build Status](https://travis-ci.org/CANDY-LINE/node-red-contrib-generic-ble.svg?branch=master)](https://travis-ci.org/CANDY-LINE/node-red-contrib-generic-ble/)
 
